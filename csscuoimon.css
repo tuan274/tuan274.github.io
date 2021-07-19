@@ -1,0 +1,448 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0
+}
+
+.header {
+	position: fixed; background-color: #77ABB7; height: 5em; z-index: 6; width: 100%
+}
+.logo {
+	position: absolute; top: 25%; width: 10%; left: 5%
+}
+.logo img {
+	height: 2.5em 
+}
+.headerline1 {
+	position: absolute; left: 30%; top: 40%
+}
+.dropdowncontent {
+	background-color: #1D3E53; display: none; position: absolute;
+	z-index: 10; height: 20.625em; width: 12.5em
+}
+.headerline1:hover .dropdowncontent {
+	display: block
+}
+.headerline1 h3 {
+	padding: 1.875em 0.625em 0.625em 1.875em; border-bottom: medium groove; color: #FFFFFF
+}
+.headerline2 {
+	position: absolute; width: 50%; left: 32%; top: 35%
+}
+.textline li {
+	display: inline; float: left; padding-left: 5%; font-family: 'Poppins', sans-serif;
+}
+.search {
+	position: absolute; right: 10%; top: 40%
+}
+.searchtext {
+	position: absolute; right: 6.5%; top: 40%
+}
+.section1 {
+	position: relative; height: 43.75em; background-color: #77ABB7
+}
+.formone {
+	padding: 0.625em 3.125em 0.625em 0.625em
+}
+.button1 {
+	padding: 0.625em 1.875em 0.625em 1.875em; border: none; background-color: #1D3E53; color: aliceblue
+}
+.imgprofile {
+	width: 40%; float: left
+}
+.imgprofile1 img {
+	height: 15.625em
+}
+.imgprofile1 {
+	position: absolute; left: 25%; top: 20%; z-index: 2
+}
+.imgprofile2 img {
+	height: 15.625em
+}
+.imgprofile2 {
+	position: absolute; left: 15%; top: 45%
+}
+.form {
+	float: right; width: 40%; padding-top: 10%
+}
+.sform {
+	padding-top: 1.25em
+}
+.sform3 {
+	padding-top: 1.875em
+}
+.owlthree {
+	height: 18.75em; position: relative; padding-top: 3.75em; background-color: #EFECEC
+}
+.item4son1 {
+	width: 60%; padding-bottom: 3.125em; background-color: #FFFFFF
+}
+.item4son {
+	padding-left: 28.5%
+}
+.item4 h3 {
+	padding: 3.75em 0px 1.875em 0px
+}
+.item4 h5 {
+	padding-bottom: 1.875em; width: 60%; padding-left: 20%
+}
+.button2 {
+	padding: 0.625em 1.25em; border: none; background-color: #254B62; color: #FFFFFF
+}
+.section3 {
+	text-align: center; height: 31.25em; position: relative; background-color: #EFECEC
+}
+.motherbox {
+	position: absolute; width: 100%; top: 30%; display: grid; grid-template-columns: auto auto auto
+}
+.minibox {
+	background-color: #FFFFFF; height: 18.75em
+}
+.minibox i {
+	font-size: 1.875em
+}
+.sonbox i {
+	padding-bottom: 5%; padding-top: 10%
+}
+.sonbox h2 {
+	padding-bottom: 5%
+}
+.sonbox h4 {
+	padding-bottom: 10%; padding-left: 10%; padding-right: 10%
+}
+.sonbox1 {
+	width: 60%; padding-left: 40%
+}
+.sonbox2 {
+	width: 60%; padding-left: 19%
+}
+.sonbox3 {
+	width: 60%; padding-right: 35%
+}
+.section4 {
+	background-color: #254B62; height: 12.5em; position: relative
+}
+.subcribetext {
+	float: left; padding-left: 18%; padding-top: 3.75em; text-align: center; color: #FFFFFF
+}
+.subcribetext h2 {
+	font-size: 2.5em
+}
+.subcribebox {
+	float: right; padding-right: 18%; padding-top: 5.625em
+}
+.phone1 {
+	padding: 0.625em 9.375em 0.625em 0.625em; border: none
+}
+.button3 {
+	padding: 0.625em 2.5em 0.625em 2.5em; border: none; background-color: #EFECEC
+}
+.section5 {
+	text-align: center; height: 56.25em; position: relative
+}
+.banner1 {
+	background-image: url("./img/roman-spiridonov-FemeYrbdMWE-unsplash.jpg"); width: 42%; height: 33.4375em; background-size: cover; background-position: top; float: left
+}
+.bannermother {
+	padding-left: 10%
+}
+.bannertext {
+	position: absolute; width: 30%; top: 60%; left: 14%; color: #FFFFFF
+}
+.bannerbutton {
+	position: absolute; top: 73%; left: 25%
+}
+.button4 {
+	padding: 0.625em 2.5em; border: none; background-color: #476D7C; color: #FFFFFF
+}
+.button4:hover {
+	background-color: transparent; border: thin double #254B62
+}
+.imgbanner2 img {
+	height: 15.625em; float: left
+}
+.imgbanner2 img:hover {
+	opacity: 80%
+}
+.textbox2 {
+	width: 60%; text-align: left; float: right
+}
+.textbox2 h4 {
+	padding-bottom: 1.875em; padding-top: 1.875em
+}
+.banner2 {
+	float: right; width: 40%; padding-bottom: 1.25em; padding-right: 10%
+}
+.banner3 {
+	float: right; width: 40%; padding-right: 10%
+}
+.section5text {
+	padding: 5%
+}
+.owlone {
+	position: relative; height: 34.375em; background-color: #77ABB7
+}
+.item1 {
+	padding-top: 15%; text-align: center
+}
+.item2 {
+	padding-top: 13%; text-align: center
+}
+.item3 {
+	padding-top: 20%; text-align: center
+}
+.item3 i {
+	font-size: 2.5em
+}
+.owltwo {
+	position: relative; height: 12.5em; padding-top: 1.875em
+}
+.slide3mini {
+	width: 60%; padding-left: 20%
+}
+.button8 {
+	padding: 0.625em 1.25em; background-color: #1D3E53; border: none; color: #FFFFFF
+}
+.item1son {
+	padding-left: 28.5%
+}
+.item2son {
+	padding-top: 10%; padding-bottom: 10%; padding-left: 15%
+}
+.item2son1 {
+	padding: 10%
+}
+.item1son1 {
+	background-color: #FFFFFF; width: 60%; padding-bottom: 3.125em
+}
+.item1son1 i {
+	padding: 30% 0% 15%; font-size: 3.125em
+}
+.item1son1 h3 {
+	padding-bottom: 15%; width: 60%; padding-left: 20%
+}
+.item2son1 {
+	background-color: #FFFFFF; width: 60%
+}
+.item2son1 h3 {
+	padding: 5%
+}
+.textslide1 {
+	text-align: center; padding-top: 5%
+}
+.textslide2 {
+	text-align: center; padding-bottom: 10%
+}
+.section6 {
+	display: grid; grid-template-columns: auto auto; height: 62.5em; position: relative
+}
+.bannergrid1 {
+	height: 34.375em; background-color: #77ABB7
+}
+.bannergrid2 {
+	text-align: center
+}
+.bannergrid2 h2 {
+	padding-top: 10%; padding-bottom: 5%
+}
+.bannergrid2 h4 {
+	width: 70%; padding-left: 15%; padding-bottom: 10%
+}
+.bannergrid2 h3 {
+	padding-bottom: 3%
+}
+.bannergrid2 ul i {
+	padding: 1% 1%; font-size: 1.25em
+}
+.imagegrid1 {
+	height: 34.375em; background-image: url(./img/rob-lambert-9Q_pLLP_jmA-unsplash.jpg); background-size: cover; background-position: center; position: relative
+}
+.imagegrid2 {
+	height: 34.375em; background-image: url(./img/alex-kotliarskyi-QBpZGqEMsKg-unsplash.jpg); background-size: cover; background-position: center; position: relative
+}
+.bannertext1 {
+	width: 70%; position: relative; left: 10%; top: 15%
+}
+.bannertext2 {
+	display: grid; grid-template-columns: auto auto; text-align: center; padding-bottom: 10%; position: relative
+}
+.team {
+	width: 60%; position: relative
+}
+.member1 {
+	position: absolute
+}
+.member2 {
+	position: absolute
+}
+.member3 {
+	position: absolute
+}
+.member4 {
+	position: absolute
+}
+.minimember1 {
+	width: 55%; padding-top: 25%; padding-left: 16%
+}
+.minimember2 {
+	width: 55%; padding-top: 25%; padding-left: 85%
+}
+.minimember3 {
+	width: 55%; padding-top: 45%; padding-left: 16%
+}
+.minimember4 {
+	width: 55%; padding-top: 45%; padding-left: 85%
+}
+.grid1 {
+	display: grid; grid-template-columns: auto auto auto; width: 80%; padding-left: 10%; padding-right: 10%
+}
+.section7 {
+	height: 21.875em; text-align: center; position: relative; background-color: #254B62
+}
+.texttop {
+	width: 30%; padding-left: 35%; padding-top: 4%; color: #FFFFFF
+}
+.button51 {
+	padding-top: 2%
+}
+.button5 {
+	padding: 0.625em 1.875em; border: none
+}
+.imagegrid3 {
+	height: 31.25em; background-image: url("./img/maxim-hopman-IayKLkmz6g0-unsplash.jpg"); background-size: cover; background-position: bottom; grid-column-start: 1; grid-column-end: 4
+}
+.itemgrid1 {
+	width: 70%; padding-top: 3.125em; padding-bottom: 3.125em
+}
+.textgrid1 {
+	float: left; padding-right: 1.25em; font-size: 2.5em
+}
+.textgrid2 {
+	padding-top: 0.625em
+}
+.textgrid3 {
+	width: 100%; float: right; padding-top: 1.25em; padding-bottom: 1.875em
+}
+.texttop1 {
+	text-align: center; padding: 3%
+}
+.owlthree {
+	text-align: center
+}
+.section9 {
+	background-image: url("./img/52210-amd-location-worldmap2-1920x600_0.jpg"); background-size: cover; background-position: center;
+	height: 31.25em; position: relative
+}
+.lastform {
+	position: absolute; bottom: -40%; right: 10%; z-index: 3; background-color: #FFFFFF; border: thin double #5C5757
+}
+.form1 {
+	padding: 2.5em
+}
+.sform1{
+	padding: 0.3125em 2.5em 0.3125em 1.25em
+}
+.sform2 {
+	padding: 0.3125em 2.5em 3.125em 1.25em
+}
+.miniform {
+	padding: 0.625em
+}
+.button6 {
+	padding: 0.625em 5.75em; border: none; background-color: #254B62; color: #FFFFFF
+}
+.sendmessages {
+	padding-bottom: 1.875em
+}
+.section10 {
+	position: relative; height: 18.75em; background-color: #77ABB7
+}
+.location {
+	padding-bottom: 1.875em
+}
+.address h3 {
+	padding-bottom: 0.625em
+}
+.phone {
+	padding-bottom: 1.875em
+}
+.phonenumber h3 {
+	padding-bottom: 0.625em
+}
+.contact {
+	float: left; padding-left: 10%; padding-top: 5%
+}
+.contact1 {
+	padding-left: 35%; padding-top: 5%
+}
+.section11 {
+	display: grid; grid-template-columns: auto auto auto; height: 12.5em
+}
+.lastlogo {
+	padding-left: 35%; padding-top: 10%
+}
+.lastlogo img {
+	height: 3.125em
+}
+.privacy1 {
+	float: left; padding-top: 5%; padding-left: 10%
+}
+.privacy1 h3 {
+	padding-bottom: 0.9375em
+}
+.privacy2 {
+	float: right; padding-right: 20%; padding-top: 5%
+}
+.privacy2 h3 {
+	padding-bottom: 0.9375em
+}
+.lastform1 {
+	padding-top: 5.625em
+}
+.phone7 {
+	padding: 0.3125em 3.125em 0.3125em 0.3125em
+}
+.button7 {
+	border: none; padding: 0.4375em 1.25em; background-color: #254B62; color: #FFFFFF
+}
+h4 {
+	font-family: 'Open Sans', sans-serif;
+}
+h1 {
+	font-family: 'Hind Siliguri', sans-serif;
+}
+h2 {
+	font-family: 'Karla', sans-serif;
+}
+h3 {
+	font-family: 'Dosis', sans-serif;
+}
+.item4son1 h3 {
+	font-family: 'Hind Siliguri', sans-serif;
+}
+h5 {
+	font-family: 'Karla', sans-serif;
+}
+.textgrid2 h3 {
+	font-family: 'Josefin Sans', sans-serif;
+}
+.team h3 {
+	font-family: 'Josefin Sans', sans-serif;
+}
+.bannertext1 h2 {
+	font-family: 'Hind Siliguri', sans-serif;
+}
+.bannergrid2 h2 {
+	font-family: 'Hind Siliguri', sans-serif;
+}
+.h41 {
+	font-family: 'Karla', sans-serif;
+}
+.minibox h4 {
+	font-family: 'Karla', sans-serif;
+}
+.textslide2 h3 {
+	font-family: 'Karla', sans-serif;
+}
