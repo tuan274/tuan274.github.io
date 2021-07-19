@@ -6,6 +6,9 @@
 	padding: 0
 }
 
+html { 
+scroll-behavior: smooth;
+} 
 .header {
 	position: fixed; background-color: #77ABB7; height: 5em; z-index: 6; width: 100%
 }
