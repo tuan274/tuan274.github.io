@@ -1,0 +1,12 @@
+.col .counter-number {
+  line-height: 48px;
+  font-size: 48px;
+  font-weight: bold;
+}
+.col .counter-title {
+  color: #424242;
+}
+.col .counter-title strong {
+  display: block;
+  font-size: 1.2rem;
+}
