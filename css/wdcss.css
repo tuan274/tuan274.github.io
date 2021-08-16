@@ -20,7 +20,7 @@ html {
 
 .wrap {
 	background-image: url("../img/home-bg.jpg");
-	height: 5100px;
+	height: 526.4vh;
 	width: 100vw;
 	background-repeat: no-repeat;
 	background-position: top;
@@ -38,6 +38,9 @@ header {
 	float: left;
 	padding-top: 4.13vh;
 	box-sizing: border-box;
+}
+.logo img {
+	height: 3.5vh;
 }
 .button {
 	float: right;
@@ -108,18 +111,19 @@ header {
 
 .section1 {
 	text-align: center;
-	height: 830px;
+	height: 85.7vh;
 	position: relative;
 	width: 100vw;
 	
 }
 .section1 img {
-	padding: 150px 150px 10px;
+	padding: 15.5vh 7.8125vw 1.1vh;
 	margin: auto;
+	width: 31.25vw;
 }
 .section1 h1 {
 	color: white;
-	padding-bottom: 160px;
+	padding-bottom: 16.50vh;
 	font-family: 'Montserrat', sans-serif;
 	line-height: 1.2em;
     letter-spacing: 6px;
@@ -128,8 +132,11 @@ header {
 }
 .searchbar {
 	position: relative;
-	bottom: 80px;
-	padding: 10px 30px;
+	bottom: 8.3vh;
+	padding: 1.1vh 3.1vh;
+}
+.searchbar {
+	font-size: 0.625vw;
 }
 input[type=text] {
   width: 10vw;
@@ -155,9 +162,9 @@ input[type=text]:focus {
 
 
 .section2 {
-	height: 800px;
+	height: 82.5vh;
 	position: relative;
-	top: 70px;
+	top: 7.2vh;
 	width: 100vw;
 }
 .about {
@@ -165,7 +172,7 @@ input[type=text]:focus {
 	width: 30%;
 	position: relative;
 	left: 25%;
-	top: 70px;
+	top: 7.2vh;
 	font-family: "Montserrat", Sans-serif;
     font-size: 3.125vw;
     font-weight: 800;
@@ -176,7 +183,7 @@ input[type=text]:focus {
 	width: 40%;
 	float: right;
 	right: 10%;
-	top: 70px;
+	top: 7.2vh;
 	font-family: "Montserrat", Sans-serif;
     font-size: 0.73vw;
     font-weight: 300;
@@ -186,7 +193,7 @@ input[type=text]:focus {
 	color: #f0dc55;
 	position: relative;
 	right: 20%;
-	line-height: 30px;
+	line-height: 2.15em;
 	width: 80%;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -201,12 +208,12 @@ input[type=text]:focus {
 }
 .button1 {
 	border: none;
-	padding: 20px 50px;
+	padding: 2.1vh 2.6vw;
 	border-radius: 100px;
 	background-color: #f0dc55;
 	color: #1b2b37;
 	position: relative;
-	top: 50px;
+	top: 5.2vh;
 	box-sizing: border-box;
 	text-decoration: none;
 	font-family: "Montserrat", Sans-serif;
@@ -226,9 +233,9 @@ input[type=text]:focus {
 
 .section3 {
 	position: relative;
-	top: 70px;
+	top: 7.2vh;
 	text-align: center;
-	height: 800px;
+	height: 82.5vh;
 	width: 100vw;
 }
 .section3 h1 {
@@ -240,31 +247,31 @@ input[type=text]:focus {
 	padding: 60px;
 }
 .owl-carousel {
-	max-width: 1200px;
+	max-width: 62.5vw;
 	margin: auto;
 }
 .banner1 {
 	background-image: url("../img/journez-tour-1.jpg");
 	background-size: cover;
 	background-position: center;
-	height: 450px;
-	max-width: 350px;
+	height: 46.4vh;
+	max-width: 18.2vw;
 	margin: auto;
 }
 .banner2 {
 	background-image: url("../img/journez-tour-2.jpg");
 	background-size: cover;
 	background-position: center;
-	height: 450px;
-	max-width: 350px;
+	height: 46.4vh;
+	max-width: 18.2vw;
 	margin: auto;
 }
 .banner3 {
 	background-image: url("../img/journez-tour-3.jpg");
 	background-size: cover;
 	background-position: center;
-	height: 450px;
-	max-width: 350px;
+	height: 46.4vh;
+	max-width: 18.2vw;
 	margin: auto;
 }
 .banner:hover {
@@ -285,16 +292,16 @@ input[type=text]:focus {
 }
 .bannertext .fa-star {
 	color: #f0dc55;
-	padding-bottom: 15px;
+	padding-bottom: 1.5vh;
 }
 .button2 {
 	border: none;
-	padding: 20px 50px;
+	padding: 2vh 2.6vw;
 	border-radius: 100px;
 	background-color: #f0dc55;
 	color: #1b2b37;
 	position: relative;
-	top: 50px;
+	top: 5.2vh;
 	box-sizing: border-box;
 	text-decoration: none;
 	font-family: "Montserrat", Sans-serif;
@@ -314,8 +321,8 @@ input[type=text]:focus {
 
 .section4 {
 	position: relative;
-	top: 70px;
-	height: 700px;
+	top: 7.2vh;
+	height: 72.3vh;
 	width: 100vw;
 }
 .offer {
@@ -355,15 +362,19 @@ input[type=text]:focus {
 }
 
 
-
+.section5 {
+	height: 40vh;
+	width: 100vw;
+	position: relative;
+}
 .counter {
 	position: relative;
-	top: 120px;
+	top: 12.4vh;
 	width: 60vw;
 	margin: auto;
 	display: grid;
 	grid-template-columns: auto auto auto auto;
-	height: 350px;
+	height: 36vh;
 	z-index: 10;
 	text-align: center
 }
@@ -383,18 +394,18 @@ input[type=text]:focus {
 	color: #1b2b37;
 	height: 250px;
 	width: 250px;
-	border-radius: 200px;
+	border-radius: 1000px;
 	opacity: 85%;
 }
 .counter-number {
-	padding-top: 80px;
+	padding-top: 8.2vh;
 	font-family: "Montserrat", Sans-serif;
     font-size: 1.875vw;
     font-weight: 800;
     line-height: 1.2em;
 }
 .counter-title {
-	padding-top: 10px;
+	padding-top: 1vh;
 	font-family: "Montserrat", Sans-serif;
     font-size: 0.73vw;
     font-weight: 600;
@@ -405,9 +416,9 @@ input[type=text]:focus {
 
 
 .section6 {
-	top: 120px;
+	top: 12.4vh;
 	position: relative;
-	height: 600px;
+	height: 62vh;
 	width: 100vw;
 }
 .takealook {
@@ -436,8 +447,8 @@ input[type=text]:focus {
 	width: 60%;
 	float: right;
 	position: relative;
-	left: 90px;
-	top: 30px;
+	left: 4.6875vw;
+	top: 3.1vh;
 	font-family: "Montserrat", Sans-serif;
     font-size: 1.25vw;
     font-weight: 800;
@@ -457,7 +468,7 @@ input[type=text]:focus {
 .section7 {
 	position: relative;
 	text-align: center;
-	height: 400px;
+	height: 41vh;
 	width: 100vw;
 }
 .phone {
@@ -497,7 +508,7 @@ input[type=text]:focus {
 .grid {
 	display: grid;
 	grid-template-columns: auto auto;
-	height: 250px;
+	height: 25.8vh;
 	width: 50%;
 	margin: auto;
 	color: white;
