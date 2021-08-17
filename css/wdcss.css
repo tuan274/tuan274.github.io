@@ -106,6 +106,10 @@ header {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+@media screen and (max-width: 1440px), (max-height: 963px) {
+	header {width: 80%}
+	.logo {height: 3.5vh}
+}
 
 
 
@@ -376,7 +380,7 @@ input[type=text]:focus {
 	grid-template-columns: auto auto auto auto;
 	height: 36vh;
 	z-index: 10;
-	text-align: center
+	text-align: center;
 }
 .colbackground1 {
 	background-color: #1b2b37;
@@ -411,6 +415,10 @@ input[type=text]:focus {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2.8px;
+}
+@media screen and (min-width: 1440px), (max-height: 963px) {
+	.colbackground1 {width: 13vw; height: 25.8vh}
+	.colbackground2 {width: 13vw; height: 25.8vh}
 }
 
 
@@ -564,7 +572,7 @@ input[type=text]:focus {
 }
 .social i {
 	padding-right: 20px;
-	font-size: 30px
+	font-size: 1.5625vw
 }
 
 
