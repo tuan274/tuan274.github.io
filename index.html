@@ -73,7 +73,9 @@
 			<img src="../img/journez-home-text.png" class="animate__animated animate__zoomIn">
 			<h1 class="wow fadeInUp" wow-data-duration="3000ms">DỊCH VỤ HƯỚNG DẪN TỐT NHẤT</h1>
 			<input class="searchbar animate__animated animate__backInUp" type="text" name="search" placeholder="Tìm Tour cho bạn..">
-			<a href="#aboutus"><i class="fas fa-chevron-down wow fadeInDown"></i></a>
+			<div style="width: 100vw">
+				<a href="#aboutus"><i class="fas fa-chevron-down wow fadeInDown" style="width: 5vw; margin: auto"></i></a>
+			</div>
 		</div>
 		
 		<!--- section2 --->
@@ -305,7 +307,7 @@
 						<div class="comment wow fadeInRightBig" data-wow-duration="1500ms">
 							Tôi rất hài lòng với dịch vụ và hành trình tuyệt vời của chúng tôi. Tôi và chồng tôi đã đến thăm Châu Âu và nhìn thấy rất nhiều thành phố nổi tiếng! Chúng tôi không phải lo lắng về việc di chuyển, khách sạn và những thứ khác - chúng tôi đã có một kỳ nghỉ tuyệt vời! Journez là những chuyên gia thực sự và họ thực sự biết công việc kinh doanh của mình. Cảm ơn bạn!
 						</div>
-						<div class="customer wow fadeInRightBig" data-wow-duration="2000ms">
+						<div class="customer wow fadeInRightBig" data-wow-duration="1700ms">
 							<img src="../img/journez-testi-1.jpg">
 							<h3>Georgia Humphreys</h3>
 						</div>
@@ -314,18 +316,18 @@
 						<div class="comment wow fadeInRightBig" data-wow-duration="1500ms">
 							Tôi rất hài lòng với dịch vụ và hành trình tuyệt vời của chúng tôi. Tôi và chồng tôi đã đến thăm Châu Âu và nhìn thấy rất nhiều thành phố nổi tiếng! Chúng tôi không phải lo lắng về việc di chuyển, khách sạn và những thứ khác - chúng tôi đã có một kỳ nghỉ tuyệt vời! Journez là những chuyên gia thực sự và họ thực sự biết công việc kinh doanh của mình. Cảm ơn bạn!
 						</div>
-						<div class="customer wow fadeInRightBig" data-wow-duration="2000ms">
+						<div class="customer wow fadeInRightBig" data-wow-duration="1700ms">
 							<img src="../img/journez-testi-2.jpg">
-							<h3>Georgia Humphreys</h3>
+							<h3>Cathenna Kim</h3>
 						</div>
 					</div>
 					<div class="item2">
 						<div class="comment wow fadeInRightBig" data-wow-duration="1500ms">
 							Tôi rất hài lòng với dịch vụ và hành trình tuyệt vời của chúng tôi. Tôi và chồng tôi đã đến thăm Châu Âu và nhìn thấy rất nhiều thành phố nổi tiếng! Chúng tôi không phải lo lắng về việc di chuyển, khách sạn và những thứ khác - chúng tôi đã có một kỳ nghỉ tuyệt vời! Journez là những chuyên gia thực sự và họ thực sự biết công việc kinh doanh của mình. Cảm ơn bạn!
 						</div>
-						<div class="customer wow fadeInRightBig" data-wow-duration="2000ms">
+						<div class="customer wow fadeInRightBig" data-wow-duration="1700ms">
 							<img src="../img/journez-testi-3.jpg">
-							<h3>Georgia Humphreys</h3>
+							<h3>Johnathan Grey</h3>
 						</div>
 					</div>
 					
@@ -335,22 +337,19 @@
 				
 				
 				<script>
-					var slideIndex = 1;
-					showDivs(slideIndex);
+					var slideIndex = 0;
+					carousel();
 
-					function plusDivs(n) {
-						showDivs(slideIndex += n);
-					}
-
-					function showDivs(n) {
+					function carousel() {
 						var i;
 						var x = document.getElementsByClassName("item2");
-						if (n > x.length) {slideIndex = 1}
-						if (n < 1) {slideIndex = x.length} ;
 						for (i = 0; i < x.length; i++) {
 							x[i].style.display = "none";
 						}
+						slideIndex++;
+						if (slideIndex > x.length) {slideIndex = 1}
 						x[slideIndex-1].style.display = "block";
+						setTimeout(carousel, 7000); // Change image every 7 seconds
 					}
 				</script>
 				
@@ -469,7 +468,7 @@
 
 	<div class="form-popup" id="myForm" style="z-index: 1000">
 		<form action="/action_page.php" class="form-container">
-			<h1 style="font-family: Montserrat, Sans-serif">Đăng nhập</h1>
+			<h1 style="font-family: Montserrat, Sans-serif">Đăng ký</h1>
 
 			<label for="email" style="font-family: Montserrat, Sans-serif"><b>Email</b></label>
 			<input type="text" placeholder="Nhập email" name="email" required style="padding-left: 10px; width: 96%">
@@ -477,7 +476,7 @@
 			<label for="psw" style="font-family: Montserrat, Sans-serif"><b>Mật khẩu</b></label>
 			<input type="password" placeholder="Nhập mật khẩu" name="psw" required style="padding-left: 10px; width: 96%">
 
-			<button type="submit" class="btn" style="font-family: Montserrat, Sans-serif">Đăng nhập</button>
+			<button type="submit" class="btn" style="font-family: Montserrat, Sans-serif">Đăng ký</button>
 			<button type="button" class="btn cancel" onclick="closeForm()" style="font-family: Montserrat, Sans-serif">Đóng</button>
 		</form>
 	</div>
