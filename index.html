@@ -42,7 +42,7 @@
 		<!--- header --->
 		<header id="header" class="wow fadeInDown" data-wow-duration="1500ms">
 			<div class="logo">
-				<img src="../img/logo.png">
+				<a href="google.com"><img src="../img/logo.png"></a>
 			</div>
 			<div class="button">
 				<div id="mySidenav" class="sidenav">
@@ -72,7 +72,7 @@
 		<div class="section1">
 			<img src="../img/journez-home-text.png" class="animate__animated animate__zoomIn">
 			<h1 class="wow fadeInUp" wow-data-duration="3000ms">DỊCH VỤ HƯỚNG DẪN TỐT NHẤT</h1>
-			<input class="searchbar animate__animated animate__backInUp" type="text" name="search" placeholder="Search for Tour..">
+			<input class="searchbar animate__animated animate__backInUp" type="text" name="search" placeholder="Tìm Tour cho bạn..">
 			<a href="#aboutus"><i class="fas fa-chevron-down wow fadeInDown"></i></a>
 		</div>
 		
@@ -238,32 +238,60 @@
 		<div class="counter">
 			<div class="col wow fadeInRight">
 				<div class="colbackground1 wow fadeInRight">
-					<div class="counter-number wow fadeInRight" id="num-1">0+</div>
+					<div class="number-item counter-number wow fadeInRight"><span class="value">782</span>&#43;</div>
 					<div class="counter-title wow fadeInRight">  <p>ĐỊA ĐIỂM THAM QUAN</p></div>
 				</div>
 			</div>
 			<div class="col wow">
 				<div class="colbackground2 wow">
-					<div class="counter-number wow" id="num-2">0+</div>
+					<div class="number-item counter-number wow"><span class="value">1388</span>&#43;</div>
 					<div class="counter-title wow">  <p>KHÁCH SẠN ĐỂ Ở</p></div>
 				</div>
 			</div>
 			<div class="col wow fadeInLeft">
 				<div class="colbackground1 wow fadeInLeft">
-					<div class="counter-number wow fadeInLeft" id="num-3">0+</div>
-					<div class="counter-title wow fadeInLeft">  <p>LẶP LẠI KHÁCH THAM QUAN</p></div>
+					<div class="number-item counter-number wow fadeInLeft"><span class="value">5170</span>&#43;</div>
+					<div class="counter-title wow fadeInLeft">  <p>KHÁCH THAM QUAN</p></div>
 				</div>
 			</div>
 			<div class="col wow fadeInLeft">
 				<div class="colbackground1 wow fadeInLeft">
-					<div class="counter-number wow fadeInLeft" id="num-4">0+</div>
-					<div class="counter-title wow fadeInLeft">  <p>AN TOÀN &amp; CHẮC CHẮN</p></div>
+					<div class="number-item counter-number wow fadeInLeft"><span class="value">3900</span>&#43;</div>
+					<div class="counter-title wow fadeInLeft">  <p>KHÁCH HÀNG TIN CẬY</p></div>
 				</div>
 			</div>
 		</div>		
 		</div>
+		
+		
 		<!--- script counter --->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script><script src="../js/script.js"></script>
+		
+		<script>
+			var section = document.querySelector('.section5');
+			var hasEntered = false;
+
+			window.addEventListener('scroll', (e) => {
+				var shouldAnimate = (window.scrollY + window.innerHeight) >= section.offsetTop;
+
+				if (shouldAnimate && !hasEntered) {
+					hasEntered = true;
+   
+					$('.value').each(function () {
+						$(this).prop('Counter',0).animate({
+							Counter: $(this).text()
+						}, {
+							duration: 4000,
+							easing: 'swing',
+							step: function (now) {
+								$(this).text(Math.ceil(now));
+							}
+						});
+					});
+
+				}
+			});
+		</script>
+		
 		
 		<!--- section6 --->
 		<div class="section6">
@@ -271,13 +299,62 @@
 				<div class="clients wow fadeInLeftBig">
 					Những đánh giá từ khách hàng
 				</div>
-				<div class="comment wow fadeInRightBig" data-wow-duration="1500ms">
-					Tôi rất hài lòng với dịch vụ và hành trình tuyệt vời của chúng tôi. Tôi và chồng tôi đã đến thăm Châu Âu và nhìn thấy rất nhiều thành phố nổi tiếng! Chúng tôi không phải lo lắng về việc di chuyển, khách sạn và những thứ khác - chúng tôi đã có một kỳ nghỉ tuyệt vời! Journez là những chuyên gia thực sự và họ thực sự biết công việc kinh doanh của mình. Cảm ơn bạn!
+				
+				<div class="slider2">
+					<div class="item2">
+						<div class="comment wow fadeInRightBig" data-wow-duration="1500ms">
+							Tôi rất hài lòng với dịch vụ và hành trình tuyệt vời của chúng tôi. Tôi và chồng tôi đã đến thăm Châu Âu và nhìn thấy rất nhiều thành phố nổi tiếng! Chúng tôi không phải lo lắng về việc di chuyển, khách sạn và những thứ khác - chúng tôi đã có một kỳ nghỉ tuyệt vời! Journez là những chuyên gia thực sự và họ thực sự biết công việc kinh doanh của mình. Cảm ơn bạn!
+						</div>
+						<div class="customer wow fadeInRightBig" data-wow-duration="2000ms">
+							<img src="../img/journez-testi-1.jpg">
+							<h3>Georgia Humphreys</h3>
+						</div>
+					</div>
+					<div class="item2">
+						<div class="comment wow fadeInRightBig" data-wow-duration="1500ms">
+							Tôi rất hài lòng với dịch vụ và hành trình tuyệt vời của chúng tôi. Tôi và chồng tôi đã đến thăm Châu Âu và nhìn thấy rất nhiều thành phố nổi tiếng! Chúng tôi không phải lo lắng về việc di chuyển, khách sạn và những thứ khác - chúng tôi đã có một kỳ nghỉ tuyệt vời! Journez là những chuyên gia thực sự và họ thực sự biết công việc kinh doanh của mình. Cảm ơn bạn!
+						</div>
+						<div class="customer wow fadeInRightBig" data-wow-duration="2000ms">
+							<img src="../img/journez-testi-2.jpg">
+							<h3>Georgia Humphreys</h3>
+						</div>
+					</div>
+					<div class="item2">
+						<div class="comment wow fadeInRightBig" data-wow-duration="1500ms">
+							Tôi rất hài lòng với dịch vụ và hành trình tuyệt vời của chúng tôi. Tôi và chồng tôi đã đến thăm Châu Âu và nhìn thấy rất nhiều thành phố nổi tiếng! Chúng tôi không phải lo lắng về việc di chuyển, khách sạn và những thứ khác - chúng tôi đã có một kỳ nghỉ tuyệt vời! Journez là những chuyên gia thực sự và họ thực sự biết công việc kinh doanh của mình. Cảm ơn bạn!
+						</div>
+						<div class="customer wow fadeInRightBig" data-wow-duration="2000ms">
+							<img src="../img/journez-testi-3.jpg">
+							<h3>Georgia Humphreys</h3>
+						</div>
+					</div>
+					
+					<button class="w3-button w3-display-left wow fadeInLeft" onclick="plusDivs(-1)">&#10094;</button>
+					<button class="w3-button w3-display-right wow fadeInRight" onclick="plusDivs(+1)">&#10095;</button>
 				</div>
-				<div class="customer wow fadeInRightBig" data-wow-duration="2000ms">
-					<img src="../img/journez-testi-1.jpg">
-					<h3>Georgia Humphreys</h3>
-				</div>
+				
+				
+				<script>
+					var slideIndex = 1;
+					showDivs(slideIndex);
+
+					function plusDivs(n) {
+						showDivs(slideIndex += n);
+					}
+
+					function showDivs(n) {
+						var i;
+						var x = document.getElementsByClassName("item2");
+						if (n > x.length) {slideIndex = 1}
+						if (n < 1) {slideIndex = x.length} ;
+						for (i = 0; i < x.length; i++) {
+							x[i].style.display = "none";
+						}
+						x[slideIndex-1].style.display = "block";
+					}
+				</script>
+				
+				
 			</div>
 		</div>
 		
@@ -388,20 +465,20 @@
 	
 	
 	<!--- form --->
-	<button class="open-button" onclick="openForm()" id="loginform">Trở thành khách tham quan</button>
+	<button class="open-button" onclick="openForm()" id="loginform" style="font-family: Montserrat, Sans-serif; z-index: 99;">Trở thành khách tham quan</button>
 
 	<div class="form-popup" id="myForm">
 		<form action="/action_page.php" class="form-container">
-			<h1>Dăng nhập</h1>
+			<h1 style="font-family: Montserrat, Sans-serif">Đăng nhập</h1>
 
-			<label for="email"><b>Email</b></label>
-			<input type="text" placeholder="Enter Email" name="email" required>
+			<label for="email" style="font-family: Montserrat, Sans-serif"><b>Email</b></label>
+			<input type="text" placeholder="Nhập email" name="email" required style="padding-left: 10px; width: 96%">
 
-			<label for="psw"><b>Mật khẩu</b></label>
-			<input type="password" placeholder="Enter Password" name="psw" required>
+			<label for="psw" style="font-family: Montserrat, Sans-serif"><b>Mật khẩu</b></label>
+			<input type="password" placeholder="Nhập mật khẩu" name="psw" required style="padding-left: 10px; width: 96%">
 
-			<button type="submit" class="btn">Dăng nhập</button>
-			<button type="button" class="btn cancel" onclick="closeForm()">Đóng</button>
+			<button type="submit" class="btn" style="font-family: Montserrat, Sans-serif">Đăng nhập</button>
+			<button type="button" class="btn cancel" onclick="closeForm()" style="font-family: Montserrat, Sans-serif">Đóng</button>
 		</form>
 	</div>
 	
@@ -415,6 +492,7 @@
 		function closeForm() {
 			document.getElementById("myForm").style.display = "none";
 		}
+		
 		
 		
 	</script>

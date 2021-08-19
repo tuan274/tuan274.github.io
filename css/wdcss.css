@@ -137,11 +137,12 @@ header {
 .searchbar {
 	position: relative;
 	bottom: 8.3vh;
-	padding: 1.1vh 3.1vh;
+	padding: 1.1vh 1.5vw;
+	font-size: 0.8vw;
+	border: none;
+	box-sizing: border-box;
 }
-.searchbar {
-	font-size: 0.625vw;
-}
+
 input[type=text] {
   width: 10vw;
   -webkit-transition: width 0.4s ease-in-out;
@@ -464,6 +465,8 @@ input[type=text]:focus {
 .customer img {
 	border-radius: 100px; 
 	float: left;
+	height: 67px;
+	width: 67px;
 }
 .customer h3 {
 	margin-top: 20px;
@@ -481,7 +484,7 @@ input[type=text]:focus {
 }
 .phone {
 	color: #f0dc55;
-	ont-family: "Montserrat", Sans-serif;
+	font-family: "Montserrat", Sans-serif;
     font-size: 3.125vw;
     font-weight: 800;
     line-height: 1.2em;
@@ -489,11 +492,13 @@ input[type=text]:focus {
 }
 .speak {
 	color: white;
-	ont-family: "Montserrat", Sans-serif;
+	font-family: "Montserrat", Sans-serif;
     font-size: 3.125vw;
     font-weight: 800;
     line-height: 1.2em;
 	padding: 10px;
+	width: 60vw;
+	margin: auto;
 }
 
 
@@ -672,4 +677,57 @@ input[type=text]:focus {
 /* Add some hover effects to buttons */
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
+}
+
+
+
+
+
+.numbers{
+	padding:40px 0;
+}
+
+.numbers .flex{
+	flex-wrap:wrap;
+	justify-content: space-between;
+}
+
+.numbers .number-item{
+	width:45%;
+	padding:20px 0;
+	text-align:center;
+	font-size:1.4em;
+}
+
+
+
+.w3-display-left {
+	position: absolute;
+	z-index: 100;
+	padding: 10px;
+	top: 40%;
+	left: 45%;
+	border: none;
+	background-color: #f0dc55;
+	cursor: pointer;
+}
+.w3-display-left:hover {
+	background-color: #1b2b37;
+	color: #f0dc55;
+	transition: all 0.3s linear;
+}
+.w3-display-right {
+	position: absolute;
+	z-index: 100;
+	padding: 10px;
+	top: 40%;
+	right: 20%;
+	border: none;
+	background-color: #f0dc55;
+	cursor: pointer;
+}
+.w3-display-right:hover {
+	background-color: #1b2b37;
+	color: #f0dc55;
+	transition: all 0.3s linear;
 }
