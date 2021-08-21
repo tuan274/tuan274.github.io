@@ -71,7 +71,7 @@ header {
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 2.0833333333333335vw;
+  font-size: 2.1vw;
   color: #818181;
   display: block;
   transition: 0.3s;
@@ -81,7 +81,31 @@ header {
 
 .sidenav a:hover{
   color: #f0dc55;
-  font-size: 2.1vw;
+  transition: all 0.3s linear;
+}
+
+.socialmenu {
+	padding-top: 50px;
+}
+.socialmenu i {
+	padding: 20px;
+	color: white;
+}
+.i1:hover {
+	color: #f0dc55;
+	transition: all 0.3s linear;
+}
+.i2:hover {
+	color: #f0dc55;
+	transition: all 0.3s linear;
+}
+.i3:hover {
+	color: #f0dc55;
+	transition: all 0.3s linear;
+}
+.i4:hover {
+	color: #f0dc55;
+	transition: all 0.3s linear;
 }
 
 .sidenav .closebtn {
