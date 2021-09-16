@@ -1,9 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
-
-
 * {
 	margin: 0;
 	padding: 0;
@@ -35,77 +32,74 @@ a {
 	
 }
 
-.modelpic {
+.img1 {
 	background: url("../img/xwork-1.jpg.pagespeed.ic.DN73E2NMNK.jpg");
-	height: 100vh;
-	width: auto;
-	background-repeat: none;
 	background-size: cover;
 	background-position: center;
-	
+	background-position: center;
 }
 
-.modelpic2 {
+.img2 {
 	background: url("../img/xwork-2.jpg.pagespeed.ic.ZVGqdB_NXb.jpg");
-	height: 100vh;
-	width: auto;
-	background-repeat: none;
 	background-size: cover;
-	background-position: left;
+	background-position: center;
+	background-position: center;
 }
 
-.modelpic3 {
+.img3 {
 	background: url("../img/xwork-3.jpg.pagespeed.ic.67_xGPF5eE.jpg");
-	height: 100vh;
-	width: auto;
-	background-repeat: none;
 	background-size: cover;
+	background-position: center;
 	background-position: center;
 }
 
-.modelpic4 {
+.img4 {
 	background: url("../img/xwork-4.jpg.pagespeed.ic.nLYPVpSaNq.jpg");
-	height: 100vh;
-	width: auto;
-	background-repeat: none;
 	background-size: cover;
+	background-position: center;
 	background-position: center;
 }
 
-.modelpic5 {
+.img5 {
 	background: url("../img/xwork-5.jpg.pagespeed.ic.S8xaDr4C-e.jpg");
-	height: 100vh;
-	width: auto;
-	background-repeat: none;
 	background-size: cover;
 	background-position: center;
+	background-position: center;
 }
-.modelpic6 {
+
+.img6 {
 	background: url("../img/xwork-6.jpg.pagespeed.ic.W-8zNRiIti.jpg");
-	height: 100vh;
-	width: auto;
-	background-repeat: none;
 	background-size: cover;
+	background-position: center;
 	background-position: center;
 }
 
-.left-yellow {
-	position: relative;
-    top: 47px;
-    left: 0;
-    width: 2px;
-    height: 40px;
-    content: '';
-    background: #f3c623;
+.img7 {
+	background: url("../img/xwork-7.jpg.pagespeed.ic.xPdj9jNDDX.jpg");
+	background-size: cover;
+	background-position: center;
+	background-position: center;
 }
 
-.left-yellow2 {
-	position: relative;
-    top: 10px;
-    right: 0;
-    width: 2px;
-    height: 40px;
-    content: '';
-    background: #f3c623;
-	float: right;
+.img8 {
+	background: url("../img/xwork-8.jpg.pagespeed.ic.dx38aDnh0V.jpg");
+	background-size: cover;
+	background-position: center;
+	background-position: center;
+}
+
+.img9 {
+	background: url("../img/xwork-9.jpg.pagespeed.ic.eESFyk1RPL.jpg");
+	background-size: cover;
+	background-position: center;
+	background-position: center;
+}
+
+.text1 {
+	display: none;
+}
+
+.image:hover .text1 {
+	display: block;
+	transition: all 5s ease-in-out, all 5s ease-in-out;
 }
