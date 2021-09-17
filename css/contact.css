@@ -133,6 +133,13 @@ a:hover {
 }
 
 @media only screen 
+	and (max-width : 426px) {
+		.text-box {
+			width: 88vw !important;
+		}
+}
+
+@media only screen 
 	and (max-width : 767px) {
 		.body-desktop {
 			display: none;
