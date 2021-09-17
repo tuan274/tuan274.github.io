@@ -1,9 +1,15 @@
 @charset "utf-8";
 /* CSS Document */
 
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
 * {
 	margin: 0;
 	padding: 0;
+	transition: 0.3s
 }
 html {
 	overflow-x: hidden;
@@ -11,6 +17,28 @@ html {
 
 a {
 	color: white;
+}
+a:hover {
+	color: #f3c623;
+	transition: all 0.2s linear;
+}
+
+.logo {
+	background: url("../img/xbg_1.jpg.pagespeed.ic.Wd2z2Of-5s.webp");
+	display: inline-block;
+    text-align: left;
+    color: #000000;
+    overflow: hidden;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.logo h1 {
+	font-family: "Abril Fatface", cursive;
+	font-size: 40px;
 }
 
 .form {
@@ -29,7 +57,20 @@ a {
     background-origin: initial;
     background-clip: initial;
     background-color: rgb(0, 0, 0);
-	
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+	font-family: "Abril Fatface", cursive;
+}
+
+h5, .btn {
+	font-family: 'Poppins', sans-serif;
+	letter-spacing: 3px;
 }
 
 .img1 {
@@ -102,4 +143,124 @@ a {
 .image:hover .text1 {
 	display: block;
 	transition: all 5s ease-in-out, all 5s ease-in-out;
+}
+
+/*desktop*/
+@media only screen 
+	and (max-width : 900px) {
+		.header {
+			display: none;
+			width: 40%;
+		}
+		.side {
+			display: none;
+		}
+		.side2 {
+			width: 100%;
+		}
+		.model {
+			display: block;
+			width: 100%;
+		}
+		.headerside {
+			display: none;
+		}
+		.profilepic {
+			height: 400px;
+		}
+		
+}
+
+@media only screen 
+	and (min-width : 905px) {
+		.header {
+			display: block !important;
+		}
+		.open-btn {
+			display: none !important;
+		}
+}
+
+@media only screen 
+	and (max-width : 500px) {
+		.header {
+			width: 100%;
+		}
+}
+
+@media only screen 
+	and (max-width : 767px) {
+		.section {
+			display: none;
+		}
+}
+
+@media only screen 
+	and (min-width : 901px) {
+		.open-btn {
+			display: none;
+		}
+}
+
+@media only screen 
+	and (min-width : 902px) {
+		.nav-mb {
+			display: none;
+		}
+}
+
+/*mobile*/
+
+@media only screen 
+	and (min-width : 767px) {
+		.section2 {
+			display: none;
+		}
+}
+
+@media only screen 
+	and (max-width : 321px) {
+		.text {
+			display: none;
+		}
+		.profile {
+			height: 650px !important;
+		}
+		.motherbox {
+			height: 3000px !important;
+		}
+}
+
+.close {
+	color: white;
+	position: absolute;
+	top: 35px;
+	right: 40px;
+	font-size: 24px;
+}
+
+.nav-mb {
+	width: 100px;
+	height: 100px;
+	cursor: pointer;
+}
+
+.close:hover {
+	color: #f3c623;
+	transition: all 0.3s linear;
+}
+
+.open-btn {
+	color: #f3c623;
+	font-size: 24px;
+	position: fixed;
+	z-index: 999;
+	left: 30px;
+	top: 30px;
+	cursor: pointer;
+}
+
+.open-btn:hover {
+	color: white;
+	transition: all 0.3s linear;
 }

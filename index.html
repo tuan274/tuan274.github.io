@@ -14,17 +14,22 @@
 <body>
 	
 <!--	full page-->
-	<div class="wrapper bg-lightdark">
-		<div class="container-fluid">
-			<div class="row">
+	<div class="wrapper bg-lightdark vh-100">
+		<div class="container-fluid vh-100">
+			
+			<div class="open-btn" id="main" onclick="openNav()">
+                <i class="fas fa-bars open"></i>
+            </div>
+			
+			<div class="row vh-100">
 				
 <!--				header-->
-				<div class="vh-100 bg-black col-md-3 header position-fixed">
+				<div class="vh-100 bg-black col-md-3 header position-fixed" id="mySidenav">
 					<div class="row">
-						<div class="logo py-4 px-4 col-md-12">
-                            <img src="img/amazon_PNG6.png" height="60px">
+						<div class="logo py-4 px-5 col-md-12">
+							<h1 class="pt-4"><a href="index.html" class="logo">TUAN HOANG</a></h1>
                         </div>
-                        <div class="menu px-4 col-md-12">
+                        <div class="menu px-5 col-md-12">
                             <ul class="list-unstyled">
                                 <li class="py-2">
                                     <a href="index.html" class="text-decoration-none">Home</a>
@@ -41,10 +46,14 @@
                                 <li class="py-2">
                                     <a href="Contact.html" class="text-decoration-none">Contact</a>
                                 </li>
+								<li class="nav-mb" onclick="closeNav()">
+									<i class="fas fa-times close"></i>
+								</li>
                             </ul>
                         </div>
 						
-                        <div class="form px-4 col-md-12">
+						
+                        <div class="form px-5 col-md-12">
                             <form>
                                 <div class="form-group py-1">
 									<div class="py-3">
@@ -60,74 +69,81 @@
 					</div>
 					
 				</div>
-				<div class="col-md-9 bg-black"></div>
+				<div class="col-md-9 bg-black headerside"></div>
 <!--				header end-->
 			
 				
 <!--				body-->
 				
-<!--				section1 body-->
-				<div class="row">
-                    <div class="col-md-3 bg-lightdark"></div>
-                    <div class="bg-lightdark col-md-9 vh-100">
-                        <div class="row vh-100">
-                            <div class="col-12">
-                                <div class="row vh-100 bg-lightdark">
-    <!--							section1-->
-    <!--								image-->
-                                    <div class="col-md-6">
-                                        <div class="modelpic ms-4 w-100 example">
+<!--		for desktop-->
 
-                                        </div>
-                                    </div>
-    <!--								banner text-->
-                                    <div class="col-md-6 d-flex align-items-center">
-                                        <div class="model ms-5">
-                                            <h5 class="text-lightgray pb-2">PORTRAIT</h5>
-                                            <h1 class="text-white">Black &amp; Gold Paint Face</h1>
-                                            <div class="left-yellow">
+<!--				section1 body-->
+				<div class="col-lg-12 section">
+					<div class="row">
+                        <div class="col-md-3 bg-lightdark side"></div>
+                        <div class="bg-lightdark col-md-9 vh-100 side2">
+                            <div class="row vh-100">
+                                <div class="col-md-12">
+                                    <div class="row g-0 vh-100 bg-lightdark">
+        <!--							section1-->
+        <!--								image-->
+                                        <div class="col-md-6">
+                                            <div class="modelpic w-100 example">
 
                                             </div>
-                                            <p class="text-lightgray w-60 pb-4 ms-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
-                                            <a href="single.html" class="btn">View Portfolio</a>
                                         </div>
+        <!--								banner text-->
+                                        <div class="col-md-6 d-flex align-items-center">
+                                            <div class="model ms-5">
+                                                <h5 class="text-lightgray pb-2">PORTRAIT</h5>
+                                                <h1 class="text-white">Black &amp; Gold Paint Face</h1>
+                                                <div class="left-yellow">
+
+                                                </div>
+                                                <p class="text-lightgray w-60 pb-4 ms-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+                                                <a href="single.html" class="btn">View Portfolio</a>
+                                            </div>
+                                        </div>
+        <!--							section1 end-->
                                     </div>
-    <!--							section1 end-->
                                 </div>
                             </div>
                         </div>
                     </div>
-				</div>
+                    </div>
 <!--				section1 body end-->
 				
 <!--				section2 body-->
-				<div class="row">
-                    <div class="col-md-3 bg-lightdark"></div>
-                    <div class="bg-lightdark col-md-9 vh-100">
-                        <div class="row vh-100">
-                            <div class="col-12">
-                                <div class="row vh-100 bg-lightdark">
-    <!--							section2-->
-	<!--								banner text-->
-                                    <div class="col-md-6 d-flex align-items-center text-end">
-                                        <div class="model ms-5">
-                                            <h5 class="text-lightgray pb-2">NATURE</h5>
-                                            <h1 class="text-white pb-5">Green Leaves</h1>
-											<div class="left-yellow2">
+				<div class="col-lg-12 section">
+					<div class="row">
+                        <div class="col-md-3 bg-lightdark side"></div>
+                        <div class="bg-lightdark col-md-9 vh-100 side2">
+                            <div class="row vh-100">
+                                <div class="col-12">
+                                    <div class="row g-0 vh-100 bg-lightdark">
+        <!--							section2-->
+        <!--								banner text-->
+    <!--									for desktop-->
+                                        <div class="col-md-6 d-flex align-items-center text-end bannertext1">
+                                            <div class="model me-5">
+                                                <h5 class="text-lightgray pb-2">NATURE</h5>
+                                                <h1 class="text-white pb-5">Green Leaves</h1>
+                                                <div class="left-yellow2">
+
+                                                </div>
+                                                <p class="text-lightgray pb-4 me-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+                                                <a href="single.html" class="btn">View Portfolio</a>
+                                            </div>
+                                        </div>
+        <!--								image-->
+                                        <div class="col-md-6">
+                                            <div class="modelpic2 w-100 example">
 
                                             </div>
-                                            <p class="text-lightgray pb-4 me-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
-                                            <a href="single.html" class="btn">View Portfolio</a>
-                                        </div>
-                                    </div>
-    <!--								image-->
-                                    <div class="col-md-6">
-                                        <div class="modelpic2 w-100 example">
+										</div>
 
-                                        </div>
+        <!--							section2 end-->
                                     </div>
-    
-    <!--							section2 end-->
                                 </div>
                             </div>
                         </div>
@@ -136,68 +152,72 @@
 <!--				secton2 body end-->
 				
 <!--				section3 body-->
-				<div class="row">
-                    <div class="col-md-3 bg-lightdark"></div>
-                    <div class="bg-lightdark col-md-9 vh-100">
-                        <div class="row vh-100">
-                            <div class="col-12">
-                                <div class="row vh-100 bg-lightdark">
-    <!--							section3-->
-    <!--								image-->
-                                    <div class="col-md-6">
-                                        <div class="modelpic3 ms-4 w-100 example">
-
-                                        </div>
-                                    </div>
-	<!--								banner text-->
-                                    <div class="col-md-6 d-flex align-items-center">
-                                        <div class="model ms-5">
-                                            <h5 class="text-lightgray pb-2">NATURE</h5>
-                                            <h1 class="text-white">Coal</h1>
-                                            <div class="left-yellow">
+				<div class="col-lg-12 section">
+					<div class="row">
+                        <div class="col-md-3 bg-lightdark side"></div>
+                        <div class="bg-lightdark col-md-9 vh-100 side2">
+                            <div class="row vh-100">
+                                <div class="col-12">
+                                    <div class="row g-0 vh-100 bg-lightdark">
+        <!--							section3-->
+        <!--								image-->
+                                        <div class="col-md-6">
+                                            <div class="modelpic3 w-100 example">
 
                                             </div>
-                                            <p class="text-lightgray w-60 pb-4 ms-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
-                                            <a href="single.html" class="btn">View Portfolio</a>
                                         </div>
+        <!--								banner text-->
+                                        <div class="col-md-6 d-flex align-items-center">
+                                            <div class="model ms-5">
+                                                <h5 class="text-lightgray pb-2">NATURE</h5>
+                                                <h1 class="text-white">Coal</h1>
+                                                <div class="left-yellow">
+
+                                                </div>
+                                                <p class="text-lightgray w-60 pb-4 ms-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+                                                <a href="single.html" class="btn">View Portfolio</a>
+                                            </div>
+                                        </div>
+
+        <!--							section3 end-->
                                     </div>
-    
-    <!--							section3 end-->
                                 </div>
                             </div>
                         </div>
                     </div>
-				</div>
+                  </div>
 <!--				secton3 body end-->
 				
 <!--				section4 body-->
-				<div class="row">
-                    <div class="col-md-3 bg-lightdark"></div>
-                    <div class="bg-lightdark col-md-9 vh-100">
-                        <div class="row vh-100">
-                            <div class="col-12">
-                                <div class="row vh-100 bg-lightdark">
-    <!--							section2-->
-	<!--								banner text-->
-                                    <div class="col-md-6 d-flex align-items-center text-end">
-                                        <div class="model ms-5">
-                                            <h5 class="text-lightgray pb-2">NATURE</h5>
-                                            <h1 class="text-white pb-5">Top Leaf</h1>
-											<div class="left-yellow2">
+				<div class="col-lg-12 section">
+					<div class="row">
+                        <div class="col-md-3 bg-lightdark side"></div>
+                        <div class="bg-lightdark col-md-9 vh-100 side2">
+                            <div class="row vh-100">
+                                <div class="col-12">
+                                    <div class="row g-0 vh-100 bg-lightdark">
+        <!--							section2-->
+        <!--								banner text-->
+                                        <div class="col-md-6 d-flex align-items-center text-end">
+                                            <div class="model me-5 ms-5">
+                                                <h5 class="text-lightgray pb-2">NATURE</h5>
+                                                <h1 class="text-white pb-5">Top Leaf</h1>
+                                                <div class="left-yellow2">
+
+                                                </div>
+                                                <p class="text-lightgray pb-4 me-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+                                                <a href="single.html" class="btn">View Portfolio</a>
+                                            </div>
+                                        </div>
+        <!--								image-->
+                                        <div class="col-md-6">
+                                            <div class="modelpic4 w-100 example">
 
                                             </div>
-                                            <p class="text-lightgray pb-4 me-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
-                                            <a href="single.html" class="btn">View Portfolio</a>
                                         </div>
-                                    </div>
-    <!--								image-->
-                                    <div class="col-md-6">
-                                        <div class="modelpic4 w-100 example">
 
-                                        </div>
+        <!--							section2 end-->
                                     </div>
-    
-    <!--							section2 end-->
                                 </div>
                             </div>
                         </div>
@@ -206,33 +226,35 @@
 <!--				secton4 body end-->
 
 <!--				section5 body-->
-				<div class="row">
-                    <div class="col-md-3 bg-lightdark"></div>
-                    <div class="bg-lightdark col-md-9 vh-100">
-                        <div class="row vh-100">
-                            <div class="col-12">
-                                <div class="row vh-100 bg-lightdark">
-    <!--							section3-->
-    <!--								image-->
-                                    <div class="col-md-6">
-                                        <div class="modelpic5 ms-4 w-100 example">
-
-                                        </div>
-                                    </div>
-	<!--								banner text-->
-                                    <div class="col-md-6 d-flex align-items-center">
-                                        <div class="model ms-5">
-                                            <h5 class="text-lightgray pb-2">PORTRAIT</h5>
-                                            <h1 class="text-white">Building</h1>
-                                            <div class="left-yellow">
+				<div class="col-lg-12 section">
+					<div class="row">
+                        <div class="col-md-3 bg-lightdark side"></div>
+                        <div class="bg-lightdark col-md-9 vh-100 side2">
+                            <div class="row vh-100">
+                                <div class="col-12">
+                                    <div class="row g-0 vh-100 bg-lightdark">
+        <!--							section3-->
+        <!--								image-->
+                                        <div class="col-md-6">
+                                            <div class="modelpic5 w-100 example">
 
                                             </div>
-                                            <p class="text-lightgray w-60 pb-4 ms-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
-                                            <a href="single.html" class="btn">View Portfolio</a>
                                         </div>
+        <!--								banner text-->
+                                        <div class="col-md-6 d-flex align-items-center">
+                                            <div class="model ms-5">
+                                                <h5 class="text-lightgray pb-2">PORTRAIT</h5>
+                                                <h1 class="text-white">Building</h1>
+                                                <div class="left-yellow">
+
+                                                </div>
+                                                <p class="text-lightgray w-60 pb-4 ms-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+                                                <a href="single.html" class="btn">View Portfolio</a>
+                                            </div>
+                                        </div>
+
+        <!--							section3 end-->
                                     </div>
-    
-    <!--							section3 end-->
                                 </div>
                             </div>
                         </div>
@@ -241,39 +263,182 @@
 <!--				secton5 body end-->
 				
 <!--				section6 body-->
-				<div class="row">
-                    <div class="col-md-3 bg-lightdark"></div>
-                    <div class="bg-lightdark col-md-9 vh-100">
-                        <div class="row vh-100">
-                            <div class="col-12">
-                                <div class="row vh-100 bg-lightdark">
-    <!--							section2-->
-	<!--								banner text-->
-                                    <div class="col-md-6 d-flex align-items-center text-end">
-                                        <div class="model ms-5">
-                                            <h5 class="text-lightgray pb-2">FASHION</h5>
-                                            <h1 class="text-white pb-5">Black Girl Model</h1>
-											<div class="left-yellow2">
+				<div class="col-lg-12 section">
+					<div class="row">
+                        <div class="col-md-3 bg-lightdark side"></div>
+                        <div class="bg-lightdark col-md-9 vh-100 side2">
+                            <div class="row vh-100">
+                                <div class="col-12">
+                                    <div class="row g-0 vh-100 bg-lightdark">
+        <!--							section2-->
+        <!--								banner text-->
+                                        <div class="col-md-6 d-flex align-items-center text-end">
+                                            <div class="model me-5">
+                                                <h5 class="text-lightgray pb-2">FASHION</h5>
+                                                <h1 class="text-white pb-5">Black Girl Model</h1>
+                                                <div class="left-yellow2">
+
+                                                </div>
+                                                <p class="text-lightgray pb-4 me-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+                                                <a href="single.html" class="btn">View Portfolio</a>
+                                            </div>
+                                        </div>
+        <!--								image-->
+                                        <div class="col-md-6">
+                                            <div class="modelpic6 w-100 example">
 
                                             </div>
-                                            <p class="text-lightgray pb-4 me-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
-                                            <a href="single.html" class="btn">View Portfolio</a>
                                         </div>
-                                    </div>
-    <!--								image-->
-                                    <div class="col-md-6">
-                                        <div class="modelpic6 w-100 example">
 
-                                        </div>
+        <!--							section2 end-->
                                     </div>
-    
-    <!--							section2 end-->
                                 </div>
                             </div>
                         </div>
                     </div>
 				</div>
 <!--				secton6 body end-->
+				
+<!--		for mobile-->
+				
+<!--				body-->
+				<div class="col-lg-12 g-0 section2">
+                    <div class="row g-0 vw-100 motherbox">
+						
+<!--				section1		-->
+					<div class="profile">
+						<div class="box">
+    <!--								image-->
+                            <div class="col-lg-12 vw-100 bg-lightdark profilepic">
+                                <div class="modelpic-mobile w-100 example">
+
+                                </div>
+                            </div>
+    <!--								banner text-->
+                            <div class="col-lg-12 vw-100 d-flex align-items-center bg-lightdark py-5">
+                                <div class="model ms-5">
+                                    <h5 class="text-lightgray pb-2">PORTRAIT</h5>
+                                    <h1 class="text-white pb-2">Black &amp; Gold Paint Face</h1>
+                                    <p class="text-lightgray w-60 pb-2 text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+                                    <a href="single.html" class="btn">View Portfolio</a>
+                                </div>
+                            </div>
+						</div>
+					</div>
+
+						
+<!--				section2		-->
+					<div class="profile">
+						<div class="box">
+    <!--								image-->
+                            <div class="col-lg-12 vw-100 bg-lightdark profilepic">
+                                <div class="modelpic-mobile2 w-100 example">
+
+                                </div>
+                            </div>
+    <!--								banner text-->
+                            <div class="col-lg-12 vw-100 d-flex align-items-center bg-lightdark py-5">
+                                <div class="model ms-5">
+                                    <h5 class="text-lightgray pb-2">NATURE</h5>
+                                    <h1 class="text-white pb-2">Green Leaves</h1>
+                                    <p class="text-lightgray w-60 pb-2 text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+                                    <a href="single.html" class="btn">View Portfolio</a>
+                                </div>
+                            </div>
+						</div>
+					</div>
+						
+						
+<!--				section3		-->
+					<div class="profile">
+						<div class="box">
+    <!--								image-->
+                            <div class="col-lg-12 vw-100 bg-lightdark profilepic">
+                                <div class="modelpic-mobile3 w-100 example">
+
+                                </div>
+                            </div>
+    <!--								banner text-->
+                            <div class="col-lg-12 vw-100 d-flex align-items-center bg-lightdark py-5">
+                                <div class="model ms-5">
+                                    <h5 class="text-lightgray pb-2">NATURE</h5>
+                                    <h1 class="text-white pb-2">Coal</h1>
+                                    <p class="text-lightgray w-60 pb-2 text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+                                    <a href="single.html" class="btn">View Portfolio</a>
+                                </div>
+                            </div>
+						</div>
+					</div>
+						
+						
+<!--				section4		-->
+					<div class="profile">
+						<div class="box">
+    <!--								image-->
+                            <div class="col-lg-12 vw-100 bg-lightdark profilepic">
+                                <div class="modelpic-mobile4 w-100 example">
+
+                                </div>
+                            </div>
+    <!--								banner text-->
+                            <div class="col-lg-12 vw-100 d-flex align-items-center bg-lightdark py-5">
+                                <div class="model ms-5">
+                                    <h5 class="text-lightgray pb-2">NATURE</h5>
+                                    <h1 class="text-white pb-2">Top Leaf</h1>
+                                    <p class="text-lightgray w-60 pb-2 text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+                                    <a href="single.html" class="btn">View Portfolio</a>
+                                </div>
+                            </div>
+						</div>
+					</div>
+						
+						
+<!--				section5		-->
+					<div class="profile">
+						<div class="box">
+    <!--								image-->
+                            <div class="col-lg-12 vw-100 bg-lightdark profilepic">
+                                <div class="modelpic-mobile5 w-100 example">
+
+                                </div>
+                            </div>
+    <!--								banner text-->
+                            <div class="col-lg-12 vw-100 d-flex align-items-center bg-lightdark py-5">
+                                <div class="model ms-5">
+                                    <h5 class="text-lightgray pb-2">PORTRAIT</h5>
+                                    <h1 class="text-white pb-2">Building</h1>
+                                    <p class="text-lightgray w-60 pb-2 text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+                                    <a href="single.html" class="btn">View Portfolio</a>
+                                </div>
+                            </div>
+						</div>
+					</div>
+						
+						
+<!--				section6		-->
+					<div class="profile">
+						<div class="box">
+    <!--								image-->
+                            <div class="col-lg-12 vw-100 bg-lightdark profilepic">
+                                <div class="modelpic-mobile6 w-100 example">
+
+                                </div>
+                            </div>
+    <!--								banner text-->
+                            <div class="col-lg-12 vw-100 d-flex align-items-center bg-lightdark py-5">
+                                <div class="model ms-5">
+                                    <h5 class="text-lightgray pb-2">FASHION</h5>
+                                    <h1 class="text-white pb-2">Black Girl Model</h1>
+                                    <p class="text-lightgray w-60 pb-2 text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+                                    <a href="single.html" class="btn">View Portfolio</a>
+                                </div>
+                            </div>
+						</div>
+					</div>
+                    </div>
+				</div>
+<!--				body end-->
+				
 			</div>
 		</div>
 	</div>
@@ -284,5 +449,20 @@
 <!--	booststrap-->
 	<script src="js/bootstrap.js"></script>
 	<script src="js/bootstrap.bundle.js"></script>
+	
+	
+<!--	side bar-->
+	<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.display = "block";
+      document.getElementById("main").style.display = "none";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.display = "none";
+      document.getElementById("main").style.display= "block";
+    }
+    </script>
+	
 </body>
 </html>

@@ -16,15 +16,20 @@
 <!--	full page-->
 	<div class="wrapper bg-lightdark">
 		<div class="container-fluid">
+			
+			<div class="open-btn" id="main" onclick="openNav()">
+                <i class="fas fa-bars open"></i>
+            </div>
+			
 			<div class="row">
 				
 <!--				header-->
-				<div class="vh-100 bg-black col-md-3 header position-fixed">
+				<div class="vh-100 bg-black col-md-3 header position-fixed" id="mySidenav">
 					<div class="row">
-						<div class="logo py-4 px-4 col-md-12">
-                            <img src="img/amazon_PNG6.png" height="60px">
+						<div class="logo py-4 px-5 col-md-12">
+							<h1 class="pt-4"><a href="index.html" class="logo">TUAN HOANG</a></h1>
                         </div>
-                        <div class="menu px-4 col-md-12">
+                        <div class="menu px-5 col-md-12">
                             <ul class="list-unstyled">
                                 <li class="py-2">
                                     <a href="index.html" class="text-decoration-none">Home</a>
@@ -41,10 +46,14 @@
                                 <li class="py-2">
                                     <a href="Contact.html" class="text-decoration-none">Contact</a>
                                 </li>
+								<li class="nav-mb" onclick="closeNav()">
+									<i class="fas fa-times close"></i>
+								</li>
                             </ul>
                         </div>
 						
-                        <div class="form px-4 col-md-12">
+						
+                        <div class="form px-5 col-md-12">
                             <form>
                                 <div class="form-group py-1">
 									<div class="py-3">
@@ -60,25 +69,25 @@
 					</div>
 					
 				</div>
-				<div class="col-md-9 bg-black"></div>
+				<div class="col-md-9 bg-black headerside"></div>
 <!--				header end-->
 
 
 <!--				body-->
-				<div class="row">
-					<div class="col-md-3"></div>
-                    <div class="col-md-9">
-                        <div class="row">
-                            <div class="col-md-6 vh-100">
+				<div class="row g-0">
+					<div class="col-lg-3 side"></div>
+                    <div class="col-lg-9 wrap">
+                        <div class="row g-0">
+                            <div class="col-sm-6 vh-100 image">
                                 <div class="imgprofile vh-100">
 									
                                 </div>
                             </div>
-                            <div class="col-md-6 d-flex align-items-center">
+                            <div class="col-sm-6 bg d-flex align-items-center info-text">
                                 <div class="info px-4">
-									<h1 class="pb-4 text-white">Hello! I'm <span class="text-warning">Tuan</span>, a freelance Designer, Web Developer.</h1>
+									<h1 class="pb-4 text-white">Hello! I'm <span class="text-warning">Tuan</span>, a Photographer and Web Developer.</h1>
 									<p class="text-lightgray">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-									<div class="social text-center pt-4">
+									<div class="social text-center pt-4 col-12">
 										<ion-icon name="logo-facebook"></ion-icon>
 										<ion-icon name="logo-github"></ion-icon>
 										<ion-icon name="logo-behance"></ion-icon>
@@ -101,7 +110,20 @@
 	<script src="js/bootstrap.js"></script>
 	<script src="js/bootstrap.bundle.js"></script>
 	
-<!--icon-->
+<!--    icon-->
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	
+<!--	side bar-->
+	<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.display = "block";
+      document.getElementById("main").style.display = "none";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.display = "none";
+      document.getElementById("main").style.display= "block";
+    }
+    </script>
 </body>
 </html>
