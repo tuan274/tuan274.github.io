@@ -64,6 +64,10 @@ a:hover {
     letter-spacing: 1px;
 }
 
+.menu-a {
+	color: #f3c623;
+}
+
 h1 {
 	font-family: "Abril Fatface", cursive;
 }

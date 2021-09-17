@@ -46,6 +46,10 @@ a:hover {
     letter-spacing: 1px;
 }
 
+.menu-a {
+	color: #f3c623;
+}
+
 /*desktop*/
 @media only screen 
 	and (max-width : 900px) {

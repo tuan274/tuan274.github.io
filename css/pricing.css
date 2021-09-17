@@ -39,24 +39,6 @@ h3 {
 	bottom: 0px;
 }
 
-.header {
-	background: url("../img/aside.png.png");
-	background-position-x: right;
-    background-position-y: top;
-    background-size: initial;
-    background-repeat-x: no-repeat;
-    background-repeat-y: no-repeat;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
-    background-color: rgb(0, 0, 0);
-	font-family: 'Poppins', sans-serif;
-	font-size: 14px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
 .logo {
 	background: url("../img/xbg_1.jpg.pagespeed.ic.Wd2z2Of-5s.webp");
 	display: inline-block;
@@ -97,4 +79,134 @@ h3 {
 	background: url("../img/xwork-4.jpg.pagespeed.ic.nLYPVpSaNq.jpg");
 	background-size: cover;
 	background-position: center;
+}
+
+.close {
+	color: white;
+	position: absolute;
+	top: 35px;
+	right: 40px;
+	font-size: 24px;
+}
+
+.nav-mb {
+	width: 100px;
+	height: 100px;
+	cursor: pointer;
+}
+
+.close:hover {
+	color: #f3c623;
+	transition: all 0.3s linear;
+}
+
+.open-btn {
+	color: #f3c623;
+	font-size: 24px;
+	position: fixed;
+	z-index: 999;
+	left: 30px;
+	top: 30px;
+	cursor: pointer;
+}
+
+.open-btn:hover {
+	color: white;
+	transition: all 0.3s linear;
+}
+
+.header {
+	background: url("../img/aside.png.png");
+	background-position-x: right;
+    background-position-y: top;
+    background-size: initial;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(0, 0, 0);
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.menu-a {
+	color: #f3c623;
+}
+
+/*desktop*/
+@media only screen 
+	and (max-width : 900px) {
+		.header {
+			display: none;
+			width: 40%;
+		}
+		.side {
+			display: none;
+		}
+		.side2 {
+			width: 100%;
+		}
+		.model {
+			display: block;
+			width: 100%;
+		}
+		.headerside {
+			display: none;
+		}
+		.profilepic {
+			height: 400px;
+		}
+		
+}
+
+@media only screen 
+	and (min-width : 905px) {
+		.header {
+			display: block !important;
+		}
+		.open-btn {
+			display: none !important;
+		}
+}
+
+@media only screen 
+	and (max-width : 500px) {
+		.header {
+			width: 100%;
+		}
+}
+
+@media only screen 
+	and (max-width : 767px) {
+		.section {
+			display: none;
+		}
+}
+
+@media only screen 
+	and (min-width : 901px) {
+		.open-btn {
+			display: none;
+		}
+}
+
+@media only screen 
+	and (min-width : 902px) {
+		.nav-mb {
+			display: none;
+		}
+}
+
+@media only screen 
+	and (max-width : 902px) {
+		.body {
+			width: 100%;
+		}
+		.detail {
+			padding-left: 10% !important;
+		}
 }

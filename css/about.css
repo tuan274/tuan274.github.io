@@ -54,6 +54,10 @@ h5, .btn {
 	z-index: 999;
 }
 
+.menu-a {
+	color: #f3c623;
+}
+
 .logo {
 	background: url("../img/xbg_1.jpg.pagespeed.ic.Wd2z2Of-5s.webp");
 	display: inline-block;
