@@ -141,7 +141,7 @@ a:hover {
 			display: block;
 		}
 		.up-mobile {
-			height: 600px !important;
+			height: 100vh !important;
 		}
 }
 
