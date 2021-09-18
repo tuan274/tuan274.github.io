@@ -6,6 +6,7 @@
 <title>Untitled Document</title>
 </head>
 	
+	<link href="css/animate.css" rel="stylesheet">
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/pricing.css" rel="stylesheet">
 	
@@ -80,7 +81,7 @@
                         <div class="container">
                             <div class="row g-0">
                                 <div class="col-lg-3 vh-100">
-                                    <div class="img1 vh-100 d-flex align-items-center">
+                                    <div class="img1 vh-100 d-flex align-items-center wow slideInDown">
                                         <div class="detail px-3">
                                             <h3 class="text-white pb-4">Model Photography</h3>
                                             <h6 class="text-lightgray">PHOTOS</h6>
@@ -99,7 +100,7 @@
                                     </div>
                                 </div>
 								<div class="col-lg-3 vh-100">
-                                    <div class="img2 vh-100 d-flex align-items-center">
+                                    <div class="img2 vh-100 d-flex align-items-center wow slideInDown" data-wow-duration="1.2s">
                                         <div class="detail px-3">
                                             <h3 class="text-white pb-4">Events Photography</h3>
                                             <h6 class="text-lightgray">PHOTOS</h6>
@@ -118,7 +119,7 @@
                                     </div>
                                 </div>
 								<div class="col-lg-3 vh-100">
-                                    <div class="img3 vh-100 d-flex align-items-center">
+                                    <div class="img3 vh-100 d-flex align-items-center wow slideInDown" data-wow-duration="1.4s">
                                         <div class="detail px-3">
                                             <h3 class="text-white pb-4">Corporate Photography</h3>
                                             <h6 class="text-lightgray">PHOTOS</h6>
@@ -137,7 +138,7 @@
                                     </div>
                                 </div>
 								<div class="col-lg-3 vh-100">
-                                    <div class="img4 vh-100 d-flex align-items-center">
+                                    <div class="img4 vh-100 d-flex align-items-center wow slideInDown" data-wow-duration="1.6s">
                                         <div class="detail px-3">
                                             <h3 class="text-white pb-4">Movies Photography</h3>
                                             <h6 class="text-lightgray">PHOTOS</h6>
@@ -187,5 +188,12 @@
       document.getElementById("main").style.display= "block";
     }
     </script>
+	
+<!--	wow-->
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+	
 </body>
 </html>
