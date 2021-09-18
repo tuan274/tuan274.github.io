@@ -146,7 +146,12 @@ h5, .btn {
 
 .image:hover .text1 {
 	display: block;
-	transition: all 5s ease-in-out, all 5s ease-in-out;
+}
+
+.image:hover {
+	transform: scale(1.1);
+	overflow: hidden;
+	border: none;
 }
 
 /*desktop*/
@@ -232,6 +237,13 @@ h5, .btn {
 		}
 		.motherbox {
 			height: 3000px !important;
+		}
+}
+
+@media only screen 
+	and (max-width : 769px) {
+		.text1 {
+			display: block !important;
 		}
 }
 

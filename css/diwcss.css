@@ -136,6 +136,13 @@ a:hover {
 		}
 }
 
+@media only screen 
+	and (max-width : 426px) {
+		.text {
+			width: 90% !important;
+		}
+}
+
 .logo {
 	background: url("../img/xbg_1.jpg.pagespeed.ic.Wd2z2Of-5s.webp");
 	display: inline-block;
