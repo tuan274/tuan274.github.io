@@ -225,7 +225,7 @@ h1, h2 {
 }
 
 @media only screen 
-	and (max-width : 351px) {
+	and (max-width : 402px) {
 		.menu-btn-link {
 			display: none;
 		}
